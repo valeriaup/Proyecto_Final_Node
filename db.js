@@ -8,7 +8,7 @@ const db = new sqlite3.Database('./database.db', (err) => {
   }
 });
 
-db.run(`PRAGMA foreign_key = ON`)
+db.run(`PRAGMA foreign_keys = ON`)
 
 db.run(`CREATE TABLE IF NOT EXISTS Estudiantes(
   estudianteId INTEGER PRIMARY KEY AUTOINCREMENT,
