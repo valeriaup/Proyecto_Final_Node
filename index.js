@@ -20,9 +20,11 @@ app.use((req, res, next) => {
 
 const estudiantesRoutes = require('./routes/estudiantes');
 const profesoresRoutes = require('./routes/profesores');
+const cursosRoutes = require('./routes/cursos');
 
 app.use('/Api', estudiantesRoutes)
 app.use('/Api', profesoresRoutes)
+app.use('/Api', cursosRoutes)
 
 const PORT = process.env.PORT || 3000;
 
